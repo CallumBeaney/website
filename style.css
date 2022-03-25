@@ -4,8 +4,17 @@
 
 .grid-2{
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
+    grid-template-columns: 1.2fr 2fr;
 }
+
+.midcolumn{
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: 1fr 1fr;
+}
+
+
 
 body{
     margin: 0;
@@ -54,7 +63,7 @@ h2, .brgrey{
 }
 
 .section2 p{
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding-bottom: 10px;
     margin: 0;
 }
