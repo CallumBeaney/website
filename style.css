@@ -1,90 +1,112 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 
-
-.grid-2{
-    display: grid;
-    grid-template-columns: 1.2fr 2fr;
-}
-
-.midcolumn{
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    grid-template-columns: 1fr 1fr;
-}
-
-
-
-body{
+html, body{
     margin: 0;
     padding: 0;
+    /*height:100%;*/
     font-family: 'Roboto', sans-serif;
     background-color: #161616; /*eigengrau 16161D*/
     color: #AAAAAA;
 }
+        h2, .brgrey{
+            color: #DDDDDD;
+        }
 
-h2, .brgrey{
-    color: #DDDDDD;
+.sitelayout{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
-.avatarimg {
-    border-radius: 50%;
-}
+        .avatarimg {
+            border-radius: 50%;
+        }
+
+        .leftcolumn{
+            padding-top: 10vh;
+            text-align: center;
+        }
+            .leftcolumn h2{
+                font-size: 1.3rem;
+                margin-bottom: 0px;
+            }
+            .leftcolumn h3{
+                font-size: 1.3rem;
+                margin-bottom: 10px;
+            }
+            .leftcolumn a{
+                color: #88a955;
+                font-size: 0.9rem;
+                text-decoration: none;}
+            .leftcolumn p{
+                font-size: 0.9rem;
+                padding-bottom: 25px;
+                margin: 0;
+            }
+
+        .rightcolumn{
+            text-align: justify;
+            text-justify: auto; /*keep auto because languages*/
+            padding-top: 7vh;
+            width: 90%;
+        }
+            .rightcolumn h2{
+                font-size: 1.3rem;
+                margin-bottom: 10px;
+            }
+            .rightcolumn p{
+                font-size: 1rem;
+                padding-bottom: 10px;
+                margin: 0;
+            }
+            .rightcolumn a{
+                color: #CC4444;
+            }
+
+.innergridcont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #161616; /*eigengrau 16161D*/
+    padding: 0px;
+    align-content: center;
 
 
-.section1{
-    padding-top: 10vh;
+    }
+  .innergriditem {
+    background-color: #161616; /*eigengrau 16161D*/
+    background-color: #161616; /*eigengrau 16161D*/
+    padding: 1.5vh;
+    font-size: 1.1rem;
     text-align: center;
+    width:fit-content;
+  }
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
-
-.section1 a{
-    color: #88a955;
-    font-size: 0.9rem;
-    text-decoration: none;}
-
-.section1 p{
-    font-size: 0.9rem;
-    padding-bottom: 20px;
-    margin: 0;
-}
-
-
-.section2{
-    text-align: justify;
-    text-justify: auto; /*keep auto because languages*/
-    padding-top: 7vh;
-    width: 80%;
-}
-
-.section2 h2{
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-}
-
-.section2 p{
-    font-size: 1rem;
-    padding-bottom: 10px;
-    margin: 0;
-}
-
-.section2 a{
-    color: #CC4444;
-}
-
-
 
 @media(max-width:780px){
-    .grid-2{
+    .sitelayout{
         grid-template-columns: 1fr;
     }
-    .section1{
+    .leftcolumn{
         padding:0;
         padding-top: 5rem;
     }
-    .section2{
+    .rightcolumn{
         padding: 0;
         padding-left:1.5rem;
         padding-top:2rem;
     }
+    .innergridcont{
+        display: grid;
+        grid-template-columns: auto;
+        background-color: #2196F3;
+        padding: 0px;
+      }
+
 }
