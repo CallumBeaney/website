@@ -37,7 +37,12 @@ html, body{
             .leftcolumn a{
                 color: #88a955;
                 font-size: 0.9rem;
-                text-decoration: none;}
+                /* line-height: 160%; */
+                text-decoration: none;
+            }
+            .leftcolumn a:hover{
+                color: #818181;
+            }
             .leftcolumn p{
                 font-size: 0.9rem;
                 padding-bottom: 25px;
